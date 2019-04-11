@@ -1,0 +1,56 @@
+
+java -version 
+
+install java
+	https://www.java.com/en/download/
+
+install git bash 
+	https://git-scm.com/download/win
+
+install python
+	https://www.python.org/downloads/
+	version 3.7.3
+
+Donwload selenium server
+	https://github.com/srihari33/selenium
+	3.14
+
+egde driver
+ https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+Hub cmd
+	java -jar  selenium-server-standalone-3.141.59.jar -role hub -host 0.0.0.0 
+	-port 
+
+IE 
+	java -Dwebdriver.ie.driver=IEDriverServer.exe -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -browser "browserName=internet explorer,platform=WINDOWS,maxInstances=5"
+
+	fix
+		Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones.
+
+	set zoom size 100
+
+
+Chrome
+	java -Dwebdriver.chrome.driver=chromedriver.exe -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -browser "browserName=chrome,platform=WINDOWS,maxInstances=3"
+
+Edge 
+	java -Dwebdriver.edge.driver="edge.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub  http://localhost:4444/grid/register/ -browser "browserName=MicrosoftEdge,platform=WINDOWS, maxInstances=3"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
