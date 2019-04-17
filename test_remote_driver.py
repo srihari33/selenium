@@ -8,6 +8,7 @@ capabilities = DesiredCapabilities.INTERNETEXPLORER.copy()
 
 
 capabilities['platform'] = "windows"
+capabilities['ignoreProtectedModeSettings'] = True
 #capabilities['INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS'] = True
 #capabilities['INITIAL_BROWSER_URL'] = 'https://www.google.com/'
 # capabilities['build'] = 12001
